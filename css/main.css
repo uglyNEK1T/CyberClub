@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: 100%; 
+    background-repeat: no-repeat; 
+    background-color: black;
+    color: white;
+  }
+  h1,h2,h3,h4,p,a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+  }
+  @media screen and (max-width: 520px) {
+    .logo{
+        display: none !important; 
+    }
+    .container{
+        padding-left: 0px !important;
+    }
+    .points {
+
+        left: 0 !important;
+    }
+  }
+.container{
+    height: 100%;
+    background: url(/png/Shape\ branco\ -\ @manow\ \(2\)\ 3.png), url(/png/Shape\ branco\ -\ @manow\ \(52\)\ 1.png)600px 100px ;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 372px;
+    padding-left: 164px;
+    padding-bottom: 235px;
+    display: flex;
+}
+.logo{
+    display: flex;
+    gap: 47px;
+    margin-bottom: 44px;
+    flex-direction: column;
+}
+@font-face {
+    font-family: BlackItalic;
+    src: url(/fonts/20704.otf);
+  }
+  @font-face {
+    font-family: SemiBold;
+    src: url(/fonts/inter-semi-bold.otf);
+  }
+  @font-face {
+    font-family: Regular;
+    src: url(/fonts/Inter-Regular.otf);
+  }
+
+.logo_line{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    font-family: BlackItalic;
+    color: white;
+    font-size: 100px;
+}
+.logo p{
+    font-family: SemiBold;
+    color: white;
+    font-size: 20px;
+}
+.logo_desc p{
+    font-family: Regular;
+    color: white;
+    font-size: 23px;
+    width: 582px;
+}
+.rezerv{
+    border-radius: 10px;
+    width: 331px;
+    height: 63px;
+    font-weight: 600;
+    font-size: 23px;
+    font-family: SemiBold;
+    text-align: center;
+    color: #e73ab8;
+    border: none;
+    transition: 0.3s;
+    background-color: white;
+}
+.rezerv:hover{
+    transform: scale(1.1);
+    border: 2px #e73ab8;
+    background-color: #e73ab8;
+    color: white;
+    border: white 2px solid;
+}
+.rezerv:active{
+    transition: 0.1s;
+    transform: scale(0.9);
+    border: 2px #e73ab8;
+    background-color: white;
+    color: #e73ab8 ;
+}
+.points{
+    position: absolute;
+    top: 0%;
+    left: 72.7%;
+}
+.point_one{
+    display: block;
+    width: 520px;
+    height: 540px;
+}
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+    background: linear-gradient(180deg, #290019 0%, rgba(72, 0, 70, 0) 50.61%, rgba(26, 0, 34, 0) 66.73%, #1e002c 100%),linear-gradient(135deg, #f09 0%, #ad00ff 100%);
+    mix-blend-mode: color;
+}
+.text_points{
+    position: absolute;
+    top: 10%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.text_points h1{
+    font-family: SemiBold;
+    font-size: 60px;
+}
+.text_points p{
+    font-family: SemiBold;
+    font-size: 30px;
+}
+.more{
+    font-family: SemiBold;
+    font-size: 23px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 218px;
+    height: 63px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 39%;
+    left: 11%;
+    transition: 0.4s;
+}
+.more:hover{
+    transition: 0.4s;
+    transform: scale(1.06);
+}
+.more:active{
+    transition: 0.1s;
+    transform: scale(0.96);
+}
+
+.point_one{
+    display: block;
+    width: 520px;
+    height: 540px;
+}
+.gradient2 {
+	position: relative;    
+	line-height: 0;
+}
+.gradient2:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+    background: linear-gradient(225deg, #00c2ff 0%, #0038ff 100%),linear-gradient(180deg, #290019 0%, #010029 0.01%, rgba(0, 46, 72, 0) 50.61%, rgba(0, 3, 34, 0) 66.73%, #06002c 100%);;
+    mix-blend-mode: color;
+}
+.text_points2{
+    position: absolute;
+    top: 60%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.text_points2 h1{
+    font-family: SemiBold;
+    font-size: 60px;
+}
+.text_points2 p{
+    font-family: SemiBold;
+    font-size: 30px;
+}
+.more2{
+    font-family: SemiBold;
+    font-size: 23px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 218px;
+    height: 63px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 89%;
+    left: 11%;
+}
+.more2:hover{
+    transition: 0.4s;
+    transform: scale(1.06);
+}
+.more2:active{
+    transition: 0.1s;
+    transform: scale(0.96);
+}

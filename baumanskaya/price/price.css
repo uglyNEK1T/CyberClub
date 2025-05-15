@@ -1,0 +1,1333 @@
+html{
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: 100%; 
+    background-repeat: no-repeat; 
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,p,a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+.menu .burger-checkbox{
+    display: none;
+}
+.navbar{
+    position: absolute;
+    top: 150px;
+}
+.navbar a{
+    font-family: Regular;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    writing-mode: vertical-rl;
+    transition: 0.3s;
+}
+.navbar .profsous_str{
+    color: white;
+    font-family: SemiBold;
+}
+.navbar a:hover:not(.profsous_str){
+    transform: scale(1.2);
+    color: white;
+}
+.navbar a:active{
+    transform: scale(1);
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner{
+    background: url(/png/banner-price.png);
+    height: 1101px;
+    background-repeat: no-repeat;
+    background-color:  #1a1a1a;
+}
+.container{
+    padding-top: 150px;
+    padding-left: 192px;
+    padding-bottom: 150px;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+}
+.navbar .profsous_str{
+    color: white;
+    font-family: SemiBold;
+}
+.navbar a:hover:not(.profsous_str){
+    transform: scale(1.2);
+    color: white;
+}
+@font-face {
+    font-family: BlackItalic;
+    src: url(/fonts/20704.otf);
+  }
+  @font-face {
+    font-family: SemiBold;
+    src: url(/fonts/inter-semi-bold.otf);
+  }
+  @font-face {
+    font-family: Regular;
+    src: url(/fonts/Inter-Regular.otf);
+  }
+  @font-face {
+    font-family: Light;
+    src: url(/fonts/Inter-Light.otf);
+  }
+  @font-face{
+    font-family: italic;
+    src: url(/fonts/Inter-BlackItalic.otf);
+  }
+  .logo{
+    display: flex;
+    gap: 47px;
+    margin-bottom: 33px;
+    flex-direction: column;
+}
+.logo_line{
+    display: flex;
+}
+.logo h1{
+    font-family: BlackItalic;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 31px;
+}
+.logo h1 span{
+    color: #e637b7;
+}
+.logo p{
+    font-family: SemiBold;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.info_complect{
+    margin-bottom: 43px;
+}
+.card_info{
+    border-radius: 15px;
+    width: 172px;
+    height: 218px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame_info{
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    width: 152px;
+    height: 188px;
+    padding-top: 11px;
+}
+.text_card_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text_card_info p {
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+.text_card_info .desc_info{
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 7px;
+}
+.cards_info{
+    display: flex;
+    gap: 23px;
+}
+.info_tarif h1{
+    font-family: SemiBold;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+.card_tarif{
+    border-radius: 15px;
+    width: 172px;
+    height: 218px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame_tarif{
+    border-radius: 5px;
+    width: 152px;
+    height: 198px;
+    padding-top: 11px;
+    max-width: 250px;
+    /* background: linear-gradient(144deg, rgba(255,218,241,1) 0%, rgba(255,0,158,1) 100%); */
+    padding: 3px;
+    
+}
+.nameees_tarif{
+    margin-top: 9px;
+}
+.text_card_tarif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1f1f1f;
+}
+.text_card_tarif p {
+    font-family: Regular;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.text_card_tarif .desc_tarif{
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 7px;
+    margin-bottom: 16px;
+}
+.cards_tarif{
+    display: flex;
+    gap: 23px;
+    position: relative;
+}
+.cards_tarif svg{
+    position: absolute;
+    left: 0.7%;
+    top: 4%;
+    pointer-events: none;
+}
+.name_tarif_price {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 9px;
+}
+.name_tarif_price p{
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+.name_tarif_price p:not(p.stand_tarif,.tarif_price){
+    color: rgba(255, 114, 201, 0.6);
+}
+.name_tarif_price .tarif_price{
+    font-family: Regular;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.standart_plus{
+    background: url(/png/ст+\ \(2\).png) 0% , url(/png/ст+\ \(1\).png) 99% 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 1085px;
+}
+.block_st{
+    display: flex;
+    gap: 47px;
+    margin-bottom: 33px;
+    flex-direction: column;
+    padding-top: 75px;
+}
+.desc_line{
+    display: flex;
+}
+.block_st h1{
+    font-family: BlackItalic;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 31px;
+}
+.block_st h1 span{
+    color: #149ef2;
+}
+.block_st p{
+    font-family: SemiBold;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.blocks_discount{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.one_discount{
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    background: #1f1f1f;
+    border-radius: 15px;
+    width: 287px;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.two_discount{
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    background: #1f1f1f;
+    border-radius: 15px;
+    width: 287px;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame_discount{
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    width: 267px;
+    height: 82px;
+}
+.frame_discount p{
+    font-family: SemiBold;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.frame_discount h1{
+    font-size: 30px;
+    color: #ff9eda;
+}
+.two_discount h1{
+    font-size: 30px;
+    color: #e637b7;
+}
+.dis_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+}
+.standart_plus .container{
+    padding-top: 75px;
+    padding-left: 192px;
+    padding-bottom: 150px;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+}
+.standart_plus .one_discount .dis_text h1{
+    color: #89d2ff;
+}
+.standart_plus .two_discount .dis_text h1{
+    color: #149ef2;
+}
+.standart_plus .name_tarif_price p{
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+.standart_plus .name_tarif_price p:not(p.stand_tarif,.tarif_price){
+    color: rgba(42, 175, 255, 0.8);
+}
+.sec_rezerv{
+    background-color: #000000;
+    background: url(/png/бронь\ баум\ \(1\).png)0% 90%, url(/png/бронь\ баум\ \(2\).png)105% 51%;
+    height: 803px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.rezerv_container{
+    padding-top: 90px;
+    padding-left: 192px;
+}
+.main_frame{
+    box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.4);
+    background: #1f1f1f;
+    border-radius: 50px;
+    width: 700px;
+    height: 624px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rez_col{
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    width: 660px;
+    height: 584px;
+}
+.rez_title h1{
+    font-family: SemiBold;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+}
+.rez_conent{
+    margin: 26px 46px;
+    position: relative;
+}
+.rez_title{
+    position: relative;
+}
+.rez_title svg{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    pointer-events: none; 
+}
+.rez_iput{
+    margin-top: 34px;
+    display: flex;
+    gap: 14px;
+}
+input {outline:none;}
+input{
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.inp_name{
+    width: 186px;
+    height: 50px;
+    background: #141414;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 24px;
+    padding-left: 22px;
+}
+.inp_date{
+    width: 85px;
+    height: 50px;
+    background: #141414;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inp_time{
+    width: 85px;
+    height: 50px;
+    background: #141414;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input {
+    color-scheme: dark;
+  }
+  .inp_number{
+    border-radius: 10px;
+    width: 401px;
+    height: 50px;
+    background: #141414;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    padding-left: 22px;
+    margin-top: 20px;
+  }
+  .inp_number::placeholder {
+    color: white;
+  }
+  .rez_iput2{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .inp_tel{
+    border-radius: 10px;
+    width: 370px;
+    height: 50px;
+    background: #141414;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    padding-left: 22px;
+  }
+  .rez_iput2 textarea{
+    border-radius: 10px;
+    width: 370px;
+    height: 120px;
+    background: #141414;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    padding-left: 22px;
+    padding-top: 20px;
+  }
+  textarea {outline:none;}
+  textarea{
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+textarea[name="Ваши пожелания"] {
+    resize: none;
+    overflow: auto; 
+   }
+.rez_iput2 button{
+    width: 250px;
+    height: 50px;
+    margin-top: 13px;
+}
+.armor{
+    position: absolute;
+    width: 248px;
+    height: 276px;
+    left: 79%;
+    top: 24%;
+    pointer-events: none;
+}
+.armor2{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 100%;
+    top: 38%;
+    pointer-events: none;
+}
+.rez_iput2 svg {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    pointer-events: none;
+}
+.rezerv{
+    border-radius: 10px;
+    width: 331px;
+    height: 63px;
+    font-weight: 600;
+    font-size: 23px;
+    font-family: SemiBold;
+    text-align: center;
+    color: #3a4eff;
+    border: none;
+    transition: 0.3s;
+    background-color: white;
+}
+.rezerv:hover{
+    transform: scale(1.1);
+    border: 2px #3a4eff;
+    background-color: #3a4eff;
+    color: white;
+    border: white 2px solid;
+}
+.rezerv:active{
+    transition: 0.1s;
+    transform: scale(0.9);
+    border: 2px #3a4eff;
+    background-color: white;
+    color: #3a4eff ;
+}
+.rezerv_st{
+    display: flex;
+    gap: 47px;
+    margin-bottom: 33px;
+    flex-direction: column;
+}
+.rezerv_line{
+    display: flex;
+}
+.rezerv_st h1{
+    font-family: BlackItalic;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 31px;
+}
+.rezerv_st h1 span{
+    color: #2636c0;
+}
+.rezerv_st p{
+    font-family: SemiBold;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.sec_rezerv .cards_tarif svg {
+    position: absolute;
+    left: 1.7%;
+    top: 4%;
+    pointer-events: none;
+}
+.map_club{
+    background-color: #0e0e0e;
+    height: 1410px;
+    background-image: url(/png/фон\ карта\ баумская.png);
+    background-repeat: no-repeat;
+}
+.map_title{
+    margin-bottom: 125px;
+}
+.map_title p{
+    font-family: BlackItalic;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.map_container{
+    padding-left: 192px;
+    padding-top: 115px;
+}
+.location{
+    font-family: SemiBold;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    margin-bottom: 21px;
+    margin-left: 71px;
+}
+.location .adm, .wc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adm{
+    background: #4d4d4d;
+    border-radius: 10px;
+    width: 153px;
+    height: 100px;
+}
+.wc{
+    background: #4d4d4d;
+    border-radius: 10px;
+    width: 128px;
+    height: 100px;
+}
+.adm_wc{
+    display: flex;
+    gap: 40px;
+    margin-right: 83px;
+}
+.map_stplus{
+    display: grid;
+    grid-template-columns: repeat(6, 42px);
+    column-gap: 52px;
+    row-gap: 15px;
+    margin-right: 35px;
+}
+.map_st{
+    font-family: SemiBold;
+    display: flex;
+}
+.map_stplus div{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    background: #149ef2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_ps{
+    border-radius: 10px;
+    width: 225px;
+    height: 100px;
+    background: #2636c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arr_ph{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 71px;
+}
+.map_under {
+    font-family: SemiBold;
+    margin-left: 71px;
+    display: flex;
+    gap: 62px;
+    position: absolute;
+    top: 105%;
+    left: 11%;
+}
+.map_under :not(.right_column,.sign_row){
+    align-items: center;
+}
+.left_column div{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    background: #ff64c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.map_left_row_columns div:not(.block_map){
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    background: #ff64c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block_map{
+    display: flex;
+    gap: 14px;
+}
+.map_left_row_columns{
+    display: grid;
+    grid-template-columns: repeat(2,266px);
+    row-gap: 42px;
+    column-gap: 55px;
+}
+.right_column{
+    display: flex;
+    row-gap: 15px;
+    gap: 135px;
+    margin-left: 70px;
+}
+.right_column div{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    background: #149ef2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map_block_right{
+    position: relative;
+}
+.sign_row {
+    display: flex;
+    flex-direction: column; /* Вертикальное направление */
+    gap: 20px;
+    position: absolute;
+    top: 72%;
+    left: 14%;
+}
+  
+  .color-block-container {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+  }
+  
+  .color-block {
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Отступ между блоком и текстом */
+  }
+  .color-block-container p{
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+  }
+  .color-block.purple {
+    background: #ff64c4;
+  }
+  
+  .color-block.blue {
+    background: #149ef2;
+  }
+  .map_container{
+    position: relative;
+  }
+  .map_container svg {
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    pointer-events: none;
+}
+
+a:hover .back {
+    opacity: 1; /* Конечная непрозрачность */
+    visibility: visible; /* Показываем элемент */
+    pointer-events: none; /* Отключаем события мыши */
+}
+.bootcamp{
+    background-color: #1a1a1a;
+    background-image: url(/png/bootcamp_zone.png);
+    width: 1920px;
+    height: 1101px;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+._st{
+    display: flex;
+    gap: 47px;
+    margin-bottom: 33px;
+    flex-direction: column;
+    padding-top: 75px;
+}
+.boot_line{
+    display: flex;
+}
+.bootcamp_st h1{
+    font-family: BlackItalic;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 31px;
+}
+.bootcamp_st h1 span{
+    color: #ff003d;
+}
+.bootcamp_st p{
+    font-family: SemiBold;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.bootcamp_discount{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.frame_discount_boot{
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    width: 267px;
+    height: 82px;
+}
+.frame_discount_boot p{
+    font-family: SemiBold;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.two_discount .frame_discount_boot h1{
+    color: #ff003d;
+}
+.one_discount .frame_discount_boot h1{
+    color: #ff7596;
+    font-size: 30px;
+}
+.name_tarif2 p:not(p.stand_tarif,.tarif_price){
+    color: rgba(255, 151, 176, 0.5);
+}
+.name_tarif3 p:not(p.stand_tarif,.tarif_price){
+    color: rgba(255, 113, 147, 0.6);
+}
+.name_tarif4 p:not(p.stand_tarif,.tarif_price){
+    color: rgba(255, 76, 119, 0.7);
+}
+.name_tarif5 p:not(p.stand_tarif,.tarif_price){
+    color: rgba(255, 38, 90, 0.8);
+}
+.name_tarif6 p:not(p.stand_tarif,.tarif_price){ 
+    color: #ff013e;
+}
+.name_tarif_prices {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 9px;
+}
+.name_tarif_prices p{
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #673ab7;
+    /* расстояние от правого края окна браузера */
+    left: 2px;
+    right: 0;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #512da8; /* цвет заднего фона при наведении */
+    }
+  }
+  .map_photo {
+    position: absolute;
+    top: 37%;
+    left: 16.5%;
+    gap: 295px;
+    display: flex;
+    justify-content: space-between;
+    width: 1044px;
+    flex-direction: column;
+}
+.one_line {
+    margin-left: 10px;
+    display: flex;
+    gap: 957px;
+}
+.two_line {
+    display: flex;
+    gap: 600px;
+}
+.overlay {
+    position: absolute;
+    z-index: 10;
+    /* top: 30%;
+    left: 30%; */
+    opacity: 0; /* Начальная непрозрачность */
+    visibility: hidden; /* Скрываем элемент */
+    transition: opacity 0.2s ease, visibility 0.1s ease; /* Плавный переход для opacity и visibility */
+}
+.overlay img{
+    border-radius: 5%;
+}
+
+a:hover .overlay {
+    opacity: 1; /* Конечная непрозрачность */
+    visibility: visible; /* Показываем элемент */
+}
+
+@media screen and (max-width: 520px){
+    body {
+        overflow-x: hidden;
+      }
+    .logo_desc li {
+        font-family: Light;
+        color: white;
+        font-size: 27px;
+        list-style: none;
+        text-indent: -1em;
+    }
+    .logo p {
+        font-family: SemiBold;
+        color: white;
+        font-size: 27px;
+    }
+    .logo h1 {
+        font-family: BlackItalic;
+        color: white;
+        font-size: 40px;
+    }
+    .container {
+        height: 100%;
+        padding-top: 70px;
+        padding-left: 80px;
+        padding-bottom: 115px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .navbar a{
+        writing-mode: horizontal-tb;
+    }
+    .menu {
+        position: absolute;
+        left: 0%;
+    }
+    .logo_line img {
+        padding-right: 27px;
+        width: 86px;
+        height: 95px;
+    }
+    .info_tarif h1 {
+        font-size: 27px;
+    }
+    .cards_tarif {
+        flex-flow: wrap;
+    }
+    .cards_tarif svg {
+        display: none;
+    }
+    .cards_tarif {
+        gap: 17px;
+    }
+    .rezerv_container .card_tarif {
+        border-radius: 15px;
+        width: 148px;
+    }
+    .one_discount,.two_discount{
+        width: 368px;
+    }
+    .frame_discount{
+        width: 346px;
+    }
+    
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+      }
+      .burger {
+        z-index: 2;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+        margin-top: 18px;
+        left: 450px;
+    }
+      .burger::before,
+      .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #ffffff;
+      }
+      .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #ffffff;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+      }
+      .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+      }
+      .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0,0,0,0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+      }
+      .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+      }
+      .navbar a {
+        justify-content: center;
+    }
+      
+    .navbar {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: grid;
+        gap: 12px;
+        padding: 42px 0;
+        margin: 0;
+        background: #1f1f1f;
+        list-style-type: none;
+        transform: translateY(-100%);
+        transition: .3s;
+        width: 510px;
+        border: 4px solid white;
+        border-radius: 0 0 6% 6%;
+        z-index: 1;
+    }
+      .menu-item {
+        display: block;
+        padding: 8px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .menu-item:hover {
+        background: rgba(255,255,255,.2)
+      }
+      .burger-checkbox:checked ~ .navbar {
+        transform: translateY(0%);
+    }
+    .cards_info {
+        display: flex;
+        gap: 23px;
+        flex-flow: wrap;
+    }
+    .banner {
+        background-size: 800%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-color: #1a1a1a;
+    }
+    .standart_plus {
+        background-repeat: no-repeat;
+        background-color: black;
+        height: 100%;
+    }
+    .standart_plus .container {
+        padding-top: 75px;
+        padding-left: 85px;
+        padding-bottom: 150px;
+        display: flex;
+        background-size: cover;
+        flex-direction: column;
+    }
+    .block_st h1 {
+        font-size: 40px;
+    }
+    .block_st p {
+        font-size: 27px;
+    }
+    .rezerv_st h1 {
+        font-size: 40px;
+    }
+    .rezerv_st p {
+        font-size: 27px;
+    }
+    .rezerv_container {
+        padding-left: 26px;
+    }
+    .sec_rezerv .rezerv_container .cards_tarif {
+        flex-flow: nowrap;
+    }
+    .sec_rezerv {
+        background-size: 88%;
+        background-repeat: repeat-y;
+        background-color: #1a1a1a;
+        height: 100%;
+        display: flex;
+        padding-bottom: 85px;
+        flex-direction: column;
+    }
+    .main_frame {
+        overflow-x: hidden;
+        box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.4);
+        background: #0e0e0e;
+        border-radius: 50px;
+        width: 500px;
+        height: 600px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rez_col {
+        border: 3px solid rgba(255, 255, 255, 0.05);
+        border-radius: 30px;
+        width: 460px;
+        height: 573px;
+    }
+    .rez_title h1 {
+        font-family: SemiBold;
+        font-weight: 600;
+        font-size: 24px;
+        color: #fff;
+    }
+    .rez_title svg {
+        width: 167px;
+        height: 60px;
+        position: absolute;
+        top: 32%;
+        left: 67%;
+        pointer-events: none;
+    }
+    .rez_iput2 svg {
+        width: 139px;
+        height: 60px;
+        position: absolute;
+        top: 88%;
+        left: 70%;
+        pointer-events: none;
+    }
+    .armor {
+        position: absolute;
+        width: 124px;
+        height: 138px;
+        left: 88%;
+        top: 38%;
+        pointer-events: none;
+    }
+    .armor2 {
+        position: absolute;
+        width: 85px;
+        height: 85px;
+        left: 100%;
+        top: 46%;
+        pointer-events: none;
+    }
+    .inp_name {
+        width: 138px;
+        height: 50px;
+        background: #030303;
+        font-family: Regular;
+        font-weight: 400;
+        font-size: 22px;
+        padding-left: 22px;
+    }
+    .inp_date {
+        width: 55px;
+        height: 50px;
+        background: #030303;
+        font-family: Regular;
+        font-weight: 400;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .inp_time {
+        width: 89px;
+        height: 50px;
+        background: #030303;
+        font-family: Regular;
+        font-weight: 400;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .inp_number {
+        border-radius: 10px;
+        width: 354px;
+        height: 50px;
+        background: #030303;
+        font-family: Regular;
+        font-weight: 400;
+        font-size: 22px;
+        color: white;
+        padding-left: 22px;
+        margin-top: 20px;
+    }
+    .inp_tel {
+        border-radius: 10px;
+        width: 370px;
+        height: 50px;
+        background: #030303;
+        font-family: Regular;
+        font-weight: 400;
+        font-size: 22px;
+        color: white;
+        padding-left: 22px;
+    }
+    .rez_iput2 textarea {
+        border-radius: 10px;
+        width: 370px;
+        height: 120px;
+        background: #030303;
+        font-family: Regular;
+        font-weight: 400;
+        font-size: 22px;
+        color: white;
+        padding-left: 22px;
+        padding-top: 20px;
+    }
+    .stock_title h1 span{
+        display: none;
+    }
+    .stock_title h1{
+        font-size: 48px;
+    }
+    .rezerv_container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .map_club{
+        display: none;
+    }
+    .bootcamp_st h1 {
+        font-size: 40px;
+    }
+    .bootcamp_st p {
+        font-size: 27px;
+    }
+    .bootcamp {
+        background-size: cover;
+        background-color: #1a1a1a;
+        background-image: url(/png/bootcamp_zone.png);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-bottom: 60px;
+    }
+    .container {
+        height: 100%;
+        padding-top: 70px;
+        padding-left: 80px;
+        padding-bottom: 115px;
+        display: flex;
+        background-size: cover;
+    }
+}

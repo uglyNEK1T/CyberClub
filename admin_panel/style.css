@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(/img/Group\ 48.png) no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+}
+.panel {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #e73ab8;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+a.button {
+    background: #e73ab8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+}
+a.button:hover {
+    background: #c3279b;
+}
+.actions a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+.login-container {
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+.logo_line img {
+    padding-right: 0px;
+    width: 124px;
+    height: 162px;
+}
+.container {
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 235px;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+}
+.logo_line{
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 23px;
+    font-family: SemiBold;
+    text-align: center;
+    color: #e73ab8;
+    border: none;
+    transition: 0.3s;
+}
+.entrance {
+    border-radius: 10px;
+    height: 46px;
+    font-size: 23px;
+    font-family: SemiBold;
+    text-align: center;
+    color: #e73ab8;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+}
+.entrance:hover{
+    transform: scale(1.1);
+    background-color: #e73ab8;
+    color: white;
+    border: white 2px solid;
+}
+.entrance:active{
+    transition: 0.1s;
+    transform: scale(0.9);
+    background-color: white;
+    color: #e73ab8;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
